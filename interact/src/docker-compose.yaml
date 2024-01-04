@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql
+    volumes:
+      - "./.data/db:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: 0000
+      MYSQL_DATABASE: interact
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 0000
+    ports:
+      - "3306:3306"
